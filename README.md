@@ -67,5 +67,5 @@ Tests are located in:
 
 ## Author
 
-Mikołaj Jendykiewicz
+Mikołaj Jendykiewicz  
 Contact info attached in CV
