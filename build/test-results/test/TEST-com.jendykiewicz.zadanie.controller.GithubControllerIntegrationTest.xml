@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jendykiewicz.zadanie.controller.GithubControllerIntegrationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-04-03T12:51:04.946Z" hostname="LAPTOP-GRUTVC7A" time="6.217">
+  <properties/>
+  <testcase name="shouldReturnRepsForExistingUser()" classname="com.jendykiewicz.zadanie.controller.GithubControllerIntegrationTest" time="3.978"/>
+  <testcase name="shouldReturn404ForInvalidUsernames()" classname="com.jendykiewicz.zadanie.controller.GithubControllerIntegrationTest" time="1.088"/>
+  <testcase name="shouldReturn404ForNonExistentUser()" classname="com.jendykiewicz.zadanie.controller.GithubControllerIntegrationTest" time="0.171"/>
+  <testcase name="shouldReturnRepositoryWithExpectedFields()" classname="com.jendykiewicz.zadanie.controller.GithubControllerIntegrationTest" time="0.439"/>
+  <testcase name="shouldExpect400IfUsernameIsBlank()" classname="com.jendykiewicz.zadanie.controller.GithubControllerIntegrationTest" time="0.256"/>
+  <testcase name="shouldReturnEmptyListWhenUserHasNoRepositories()" classname="com.jendykiewicz.zadanie.controller.GithubControllerIntegrationTest" time="0.248"/>
+  <testcase name="shouldExpect400IfUsernameIsMissing()" classname="com.jendykiewicz.zadanie.controller.GithubControllerIntegrationTest" time="0.022"/>
+  <system-out><![CDATA[14:51:00.656 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.jendykiewicz.zadanie.controller.GithubControllerIntegrationTest]: GithubControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:51:00.952 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.jendykiewicz.zadanie.AtiperaZadanieJendykiewiczApplication for test class com.jendykiewicz.zadanie.controller.GithubControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2025-04-03T14:51:01.986+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] c.j.z.c.GithubControllerIntegrationTest  : Starting GithubControllerIntegrationTest using Java 21.0.6 with PID 27928 (started by xxmik in C:\Users\xxmik\Documents\projektzadanie\AtiperaZadanieJendykiewicz\zadanie)
+2025-04-03T14:51:01.988+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] c.j.z.c.GithubControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2025-04-03T14:51:03.723+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-03T14:51:03.757+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-03T14:51:03.758+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-03T14:51:03.854+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-03T14:51:03.856+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1819 ms
+>> HelloController Zaladowany
+2025-04-03T14:51:04.569+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2025-04-03T14:51:04.569+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-03T14:51:04.572+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2025-04-03T14:51:04.921+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 59898 (http) with context path '/'
+2025-04-03T14:51:04.931+02:00  INFO 27928 --- [AtiperaZadanieJendykiewicz] [    Test worker] c.j.z.c.GithubControllerIntegrationTest  : Started GithubControllerIntegrationTest in 3.596 seconds (process running for 5.753)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\xxmik\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.15.11\a38b16385e867f59a641330f0362ebe742788ed8\byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
